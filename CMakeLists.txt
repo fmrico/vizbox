@@ -20,3 +20,8 @@ catkin_package(
   CATKIN_DEPENDS
     message_runtime
 )
+
+install(DIRECTORY scripts/
+  USE_SOURCE_PERMISSIONS
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/
+)
